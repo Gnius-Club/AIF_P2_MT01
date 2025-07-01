@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playbook-P2-TM01</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <header>
+        <h1><span class="book-icon">📋</span> <strong>Playbook: Sesión 1 - 2º Primaria</strong></h1>
+        <div class="header-widgets">
+            <div class="timer-container">
+                <span id="timer">⏱️ 00:00</span>
+                <button id="startStop">Start</button>
+                <button id="reset">Reset</button>
+            </div>
+            <div class="theme-toggle">
+                <i class="fas fa-sun"></i>
+                <label class="switch">
+                    <input type="checkbox" id="theme-toggle-input">
+                    <span class="slider round"></span>
+                </label>
+                <i class="fas fa-moon"></i>
+            </div>
+        </div>
+    </header>
+
+    <div class="main-container">
+        <aside class="activity-list">
+            <h2>Actividades</h2>
+            <ul>
+                <li><a href="#activity-0">📝</a></li>
+                <li><a href="#activity-1">1</a></li>
+                <li><a href="#activity-2">2</a></li>
+                <li><a href="#activity-3">3</a></li>
+                <li><a href="#activity-4">4</a></li>
+                <li><a href="#activity-5">5</a></li>
+            </ul>
+
+            <div class="sidebar-info">
+                <p>💡 Cada actividad está cuidadosamente diseñada para involucrar a los estudiantes.</p>
+                <p>⏱️ Se proporcionan estimaciones de tiempo para cada actividad para ayudarle a mantener el rumbo.</p>
+            </div>
+        </aside>
+
+        <main class="content">
+            <div class="progress-bar">
+                <div class="progress"></div>
+            </div>
+
+            <button id="toggle-dialogues">Mostrar todos los diálogos</button>
+
+            <!-- SECCIÓN "DE UN VISTAZO" (ANTES ACTIVITY-0) -->
+            <div class="activity-card" id="activity-0">
+                <h2><span class="book-icon">📝</span> De un Vistazo: Sesión 1</h2>
+                <p class="overview-subtitle">Resumen rápido de objetivos, materiales y preparación para el facilitador.</p>
+                <div class="overview-table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th style="width: 50%;">Objetivos, Tácticas y Entregable</th>
+                                <th style="width: 50%;">Materiales Específicos y Preparación Previa</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <strong>Objetivos de Aprendizaje:</strong>
+                                    <ul>
+                                        <li>Misión / Tema Principal: Bienvenida a Pictoblox: ¡Dando Vida a Nuestro Personaje!</li>
+                                        <li>Objetivo General de la Sesión: Que los estudiantes se familiaricen con el entorno de Pictoblox (interfaz, personajes/sprites, fondos) y aprendan a dar sus primeras instrucciones básicas usando los bloques decir y esperar para crear una pequeña animación de saludo.</li>
+                                    </ul>
+                                    <strong>Secuencia de Clase:</strong>
+                                    <ul>
+                                        <li>⚡ La Chispa de la Idea: Activa la curiosidad y presenta el reto del día de forma enérgica.</li>
+                                        <li>⚡ El Plan en el Suelo: Introduce los conceptos y el algoritmo de forma conceptual y visual en la pizarra.</li>
+                                        <li>⚡ ¡Yo Soy el Robot!: Refuerza el algoritmo a través de una simulación física y dramatizada.</li>
+                                        <li>⚡ Del Suelo a la Pantalla: Guía a los estudiantes en la implementación práctica en la computadora.</li>
+                                        <li>⚡ Círculo de Creación: Cierra la sesión con una reflexión grupal, celebrando los logros.</li>
+                                    </ul>
+                                    <strong>Entregable Clave:</strong>
+                                    <ul>
+                                        <li>Un programa funcional en Pictoblox donde un sprite dice al menos dos mensajes diferentes, con una pausa entre ellos, utilizando los bloques `decir` y `esperar`.</li>
+                                    </ul>
+                                </td>
+                                <td>
+                                    <strong>Materiales Específicos:</strong>
+                                    <ul>
+                                        <li>Proyector</li>
+                                        <li>Computadoras o tabletas con Pictoblox abierto</li>
+                                        <li>Pizarra o rotafolio</li>
+                                        <li>Marcadores</li>
+                                    </ul>
+                                    <strong>Preparación Previa:</strong>
+                                    <ol>
+                                        <li><strong>Revisión de Misión (Interna):</strong>
+                                            <ul>
+                                                <li>Verificar conexión a internet.</li>
+                                                <li>Confirmar acceso y funcionamiento de la plataforma de programación del día (Pictoblox).</li>
+                                                <li>Tener la presentación de diapositivas lista y en orden.</li>
+                                            </ul>
+                                        </li>
+                                        <li><strong>Familiarización:</strong> Revisar el flujo de la sesión, los diálogos sugeridos y los tiempos de cada actividad.</li>
+                                        <li><strong>Preparación de Materiales:</strong> Tener listos los materiales unplugged (pizarra, marcadores, etc.) para las actividades conceptuales.</li>
+                                    </ol>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <!-- FIN DE LA SECCIÓN "DE UN VISTAZO" -->
+
+            <div class="activity-card" id="activity-1">
+                <h2>⚡ Actividad 1: La Chispa de la Idea (Vibe Grupal) ⏰ 5 minutos</h2>
+                <p>Generar entusiasmo, presentar el reto o 'vibe' de la misión del día y conectar con las experiencias previas de los estudiantes.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: El Gancho Inicial ⏰ 1.5 minutos</h3>
+                            <p>(Proyectar Diapositiva 2) Inicia la clase con una pregunta que conecte con los intereses de los alumnos (películas, videojuegos) para captar su atención.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">"¡Hola, creadores y creadoras! ¿Alguna vez han visto una película de dibujos animados o han jugado un videojuego y han pensado 'yo quiero crear mi propia historia con mis propios personajes'? ¡Pues hoy es el día en que empezamos a hacerlo!"</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Introducción a la Herramienta ⏰ 1.5 minutos</h3>
+                            <p>Presenta la herramienta del día, Pictoblox, como un "lugar mágico" y empodera a los estudiantes dándoles el rol de "directores".</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">(Muestra entusiasmo) "Hoy vamos a conocer un lugar mágico en la computadora llamado Pictoblox. En este lugar, ustedes no son solo jugadores, ¡son los directores! Ustedes deciden qué dicen y qué hacen los personajes."</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 3: Establecer la "Vibe" del Día ⏰ 2 minutos</h3>
+                            <p>Declara la "vibe" o tema de la sesión ("Somos directores de escena") y lanza el llamado a la acción para comenzar la misión.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">"Nuestra 'vibe' de hoy es: 'Somos directores de escena'. Vamos a conocer a nuestro actor principal, le daremos un escenario y le enseñaremos sus primeras líneas para que salude al mundo. ¿Listos para la acción?"</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-2">
+                <h2>⚡ Actividad 2: El Plan en el Suelo (Algoritmo Kinestésico y Conceptual) ⏰ 10 minutos</h2>
+                <p>Introducir los conceptos, herramientas y el algoritmo de la sesión de forma conceptual y kinestésica, usando la pizarra y analogías.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Introduciendo el Entorno (La Pizarra como Pantalla) ⏰ 4 minutos</h3>
+                            <p>(Proyectar Diapositiva 3) Utiliza la pizarra para dibujar y explicar los conceptos básicos de la interfaz: Escenario, Sprite y Fondo, usando la analogía de una obra de teatro.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">"¡Muy bien, directores! Todo buen director necesita un escenario y un guion. Vamos a empezar a crear nuestro <strong>plan en el suelo</strong>, usando la pizarra para diseñar nuestra escena."</p>
+                                <p class="dialogue assistant">(Dibuja un gran rectángulo en el centro de la pizarra) "Imaginen que esta pizarra es la pantalla de nuestra computadora. Este espacio grande donde ocurre toda la magia se llama Escenario. ¡Es como el escenario de una obra de teatro!"</p>
+                                <p class="dialogue assistant">(Dentro del escenario, dibuja una figura simple) "Y este es nuestro actor principal. En el mundo de la programación, a nuestro personaje lo llamamos Sprite. ¡Esa es nuestra primera palabra secreta de hoy: <strong>SPRITE</strong>!"</p>
+                                <p class="dialogue assistant">(Dibuja un fondo simple detrás del sprite) "Para que nuestro escenario no esté vacío, podemos ponerle un Fondo. Así podemos decidir si nuestra historia ocurre en el espacio, bajo el mar o en un castillo."</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Introduciendo las Instrucciones (El Guion) ⏰ 3 minutos</h3>
+                            <p>(Proyectar Diapositiva 4) Dibuja en la pizarra los bloques `decir` y `esperar` como si fueran piezas de LEGO, explicando la función de cada uno.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">"Como buenos directores, tenemos que darle un guion a nuestro actor. En Pictoblox, nuestro guion se escribe con bloques de colores, como si fueran piezas de LEGO. Hoy aprenderemos dos muy importantes."</p>
+                                <p class="dialogue assistant">(Dibuja un bloque morado en la pizarra) "Este bloque morado de 'Apariencia' es para darle la instrucción de decir algo. Podemos escribir lo que queramos que diga."</p>
+                                <p class="dialogue assistant">(Dibuja un bloque naranja) "Y este bloque naranja de 'Control' es para darle la instrucción de esperar. A veces queremos que nuestro actor haga una pausa antes de decir su siguiente línea, ¿verdad?"</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 3: Construyendo el Plan (El Algoritmo) ⏰ 3 minutos</h3>
+                            <p>(Proyectar Diapositiva 5) Escribe o dibuja la secuencia de bloques en la pizarra para que los alumnos vean el plan completo y claro antes de actuarlo.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">"Entonces, nuestro primer guion, nuestro plan, es muy sencillo."</p>
+                                <pre class="dialogue assistant" style="color: #d32f2f;">1. Primero, le diremos a nuestro Sprite: decir '¡Hola, mundo!'
+2. Luego, le diremos que haga una pausa: esperar 2 segundos.
+3. Y finalmente, le daremos otra línea: decir '¡Estoy listo para programar!'</pre>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-3">
+                <h2>⚡ Actividad 3: ¡Yo Soy el Robot! (Simulación Humana) ⏰ 5 minutos</h2>
+                <p>Reforzar la comprensión del algoritmo a través de una simulación física y dramatizada, donde los alumnos actúan como el 'robot' y el 'programador'.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Asignación de Roles ⏰ 1 minuto</h3>
+                            <p>Invita a dos voluntarios a participar y asigna claramente los roles de "Actor-Sprite" y "Director" para la dramatización.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">"¡Perfecto! Ya tenemos nuestro guion en la pizarra. Antes de dárselo a la computadora, vamos a hacer un ensayo general. Ahora, <strong>¡yo soy el robot!</strong> O mejor dicho, ¡necesito que uno de ustedes actúe como nuestro robot!"</p>
+                                <p class="dialogue assistant">"¡Vamos a actuar nuestro guion! Necesito un 'Actor-Sprite' valiente y un 'Director' muy atento."</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Ejecución de la Simulación y Reflexión ⏰ 4 minutos</h3>
+                            <p>Guía la simulación paso a paso, asegurando que la clase observe cómo el "Actor" sigue las órdenes del "Director" en secuencia. Finaliza con un aplauso y una reflexión clave sobre la programación.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">(Instruye al "Director" para que apunte a cada bloque en orden, y al "Actor-Sprite" para que ejecute la acción correspondiente. Tras la simulación, dirígete al grupo.)</p>
+                                <p class="dialogue assistant">"¡Bravo! ¡Un aplauso para nuestro equipo! ¿Vieron? El actor siguió las instrucciones del director exactamente en orden. ¡Eso es programar: dar instrucciones claras y en orden!"</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-4">
+                 <h2>⚡ Actividad 4: Del Suelo a la Pantalla (Implementación Guiada) ⏰ 15 minutos</h2>
+                <p>Guiar a los estudiantes en la implementación práctica del plan en la plataforma de programación, siguiendo un modelo paso a paso.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Explorar la Interfaz ⏰ 2 minutos</h3>
+                            <p>(Proyectar Diapositiva 6) Pide a los estudiantes que abran Pictoblox y guía una exploración visual para que identifiquen las partes clave de la interfaz que vieron en la pizarra.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">"¡Excelente trabajo! El ensayo fue un éxito. Ahora es el momento de la verdad: vamos a llevar nuestro guion <strong>del suelo a la pantalla</strong> y a dirigir a nuestro actor digital."</p>
+                                <p class="dialogue assistant">"Abran Pictoblox. Miren la pantalla. ¿Reconocen las partes? A la derecha está el Escenario con nuestro Sprite, Tobi el panda. A la izquierda están todos los bloques de colores, la Paleta de Bloques. Y aquí en el centro está nuestra Área de Código, donde armaremos nuestro guion."</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Dar la Primera Instrucción ⏰ 3 minutos</h3>
+                            <p>Modela el proceso de arrastrar el bloque `decir` desde la paleta de Apariencia hasta el Área de Código y guía a los estudiantes para que lo repliquen y personalicen el mensaje.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                 <p class="dialogue assistant">"Vamos a la paleta morada de Apariencia. Busquen el bloque que dice decir "Hola!" por 2 segundos. Hagan clic en él y, sin soltar, arrástrenlo a nuestra área de código." (Modela la acción y espera a que los niños lo imiten).</p>
+                                 <p class="dialogue assistant">"¡Genial! Ahora hagan clic dentro donde dice 'Hola!' y escriban su propio saludo. ¡Lo que ustedes quieran!"</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 3: Añadir la Pausa ⏰ 3 minutos</h3>
+                            <p>Muestra cómo encontrar el bloque `esperar` en la paleta de Control y cómo conectarlo debajo del bloque anterior, destacando la conexión tipo LEGO.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">"Ahora vamos a la paleta naranja de Control. Busquen el bloque esperar 1 segundos y arrástrenlo. Conéctenlo justo debajo del bloque morado. ¡Debería sonar un 'clic' como si fuera un LEGO!"</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 4: Añadir la Segunda Instrucción ⏰ 3 minutos</h3>
+                            <p>Guía a los estudiantes para que repitan el proceso de añadir otro bloque `decir` al final de su secuencia y lo personalicen con una nueva frase.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">"Volvamos a la paleta morada de Apariencia. Arrastren otro bloque de decir "..." por 2 segundos y conéctenlo al final de nuestro guion. Escriban una segunda frase divertida."</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 5: ¡Acción! ⏰ 4 minutos</h3>
+                            <p>Indica a los alumnos cómo ejecutar su programa haciendo clic en la bandera verde y aliéntalos a observar cómo su Sprite obedece sus órdenes.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">"¿Listos para ver su película? Para empezar la función, hagan clic en la bandera verde que está arriba del escenario. ¡Observen a su Sprite obedecer sus órdenes!"</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-5">
+                <h2>⚡ Actividad 5: Círculo de Creación (Reflexión y Cierre) ⏰ 5 minutos</h2>
+                <p>Cerrar la sesión con una reflexión grupal, celebrar los logros, reforzar los conceptos clave y conectar con la próxima misión.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Celebración y Repaso de Conceptos ⏰ 3 minutos</h3>
+                            <p>(Proyectar Diapositiva 7) Felicita a los estudiantes por su logro y guía un rápido repaso interactivo de las "palabras secretas" del día (SPRITE y BLOQUES).</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">"¡Increíble! Todos han logrado dirigir su primera escena. Para terminar, vamos a reunirnos en nuestro <strong>círculo de creación</strong> para celebrar y recordar lo que aprendimos."</p>
+                                <p class="dialogue assistant">"¡Felicidades, directores y directoras! ¡Han dado vida a su primer personaje! Han aprendido a darle un guion y él los ha obedecido. Repasemos las dos palabras secretas que aprendimos hoy:"</p>
+                                <p class="dialogue assistant">"¿Cómo se llama el personaje que programamos?" (Espera la respuesta del grupo: ¡SPRITE!)<br>"¿Y qué usamos para darle las instrucciones, esas piezas de colores?" (Espera la respuesta del grupo: ¡BLOQUES!)"</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Conexión con la Próxima Misión ⏰ 2 minutos</h3>
+                            <p>(Proyectar Diapositiva 8) Cierra la sesión reforzando la nueva identidad de los alumnos como "programadores" y genera expectativa para la siguiente clase.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">"¡Hoy han aprendido a comunicarse con la computadora y a darle órdenes! Son oficialmente programadores. En nuestra próxima aventura, no solo haremos que hable, sino que le enseñaremos a moverse por todo el escenario. ¡Prepárense para la acción!"</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
